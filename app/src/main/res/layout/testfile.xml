@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_border_2dp_0dp"
+            android:elevation="4dp"
+            android:translationZ="4dp">
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_border_2dp_30dp"
+            android:backgroundTint="#00EBB4"
+            android:layout_centerHorizontal="true"
+            android:translationZ="5dp"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="160dp"
+                android:background="@drawable/back_border_2dp_30dp"
+                android:layout_height="match_parent"
+                android:text="Requst Ride"/>
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/button3"
+                android:layout_width="160dp"
+                android:background="@drawable/back_layout_30dp_radius"
+                android:layout_height="match_parent"
+                android:text="Offer Ride" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
