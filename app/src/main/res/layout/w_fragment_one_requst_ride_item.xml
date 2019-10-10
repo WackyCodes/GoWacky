@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<!--
+        android:layout_width="148dp + 2dp"
+        android:layout_height="93dp + 2dp"
+ -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wRequestRideAvailableVehicleItem_ConstLayout"
+        android:layout_width="148dp"
+        android:layout_height="93dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/back_border_05dp_10dp"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/wVehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="@+id/wVehicleImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wAvailableSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 2 "
+            android:textColor="#1B9602"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:padding="1dp"
+            android:text="min"
+            app:layout_constraintBottom_toBottomOf="@+id/wVehicleReachTime"
+            app:layout_constraintStart_toEndOf="@+id/wVehicleReachTime"
+            app:layout_constraintTop_toTopOf="@+id/wVehicleReachTime" />
+
+        <ImageView
+            android:id="@+id/wVehicleImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icgo_car_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wVehicleType" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:gravity="center"
+            android:text="Seats\nAvailable"
+            android:textColor="#1B9602"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/wVehicleImage"
+            app:layout_constraintTop_toBottomOf="@+id/wAvailableSeats" />
+
+        <TextView
+            android:id="@+id/wVehicleReachTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:padding="2dp"
+            android:text="8"
+            app:layout_constraintBottom_toBottomOf="@+id/wVehicleImage"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

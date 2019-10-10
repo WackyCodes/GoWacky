@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".W_Fragment.W_FragmentOneReqOffRide">
+
+<!--  For Offer Ride   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:background="@drawable/back_border_1dp_0dp"
+            android:elevation="4dp"
+            android:translationZ="4dp">
+
+            <!--        This Frame For Offer Ride   -->
+            <FrameLayout
+                android:id="@+id/wFrameForOfferRide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:visibility="visible">
+
+                <include layout="@layout/w_offer_ride_one_a"/>
+
+            </FrameLayout>
+            <!--        This Frame for Request Ride     -->
+            <FrameLayout
+                android:id="@+id/wFrameForRequestRide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/wRequestRideRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_border_1dp_30dp"
+            android:backgroundTint="#00EBB4"
+            android:layout_centerHorizontal="true"
+            android:translationZ="5dp"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/wRequestRideBtn"
+                android:layout_width="160dp"
+                android:background="@drawable/back_border_1dp_30dp"
+                android:layout_height="match_parent"
+                android:text="Requst Ride"/>
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/wOfferRideBtn"
+                android:layout_width="160dp"
+                android:background="@drawable/back_border_1dp_30dp"
+                android:layout_height="match_parent"
+                android:text="Offer Ride" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
