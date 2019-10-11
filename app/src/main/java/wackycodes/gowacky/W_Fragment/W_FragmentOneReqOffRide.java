@@ -1,6 +1,7 @@
 package wackycodes.gowacky.W_Fragment;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -15,12 +17,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import wackycodes.gowacky.R;
 
-public class W_FragmentOneReqOffRide extends Fragment {
+public class W_FragmentOneReqOffRide extends Fragment implements View.OnClickListener {
 
     // Final Static...
     private static final int _CAR_ = 1901, _BIKE_ = 1902, _MINI_TRUCK_ = 1903;
     // Variable declaration ...
     private RecyclerView wRequestRideRecyclerView;
+
+    // button
+    private Button wRequestRideBtn,wOfferRideBtn;
 
 
     public W_FragmentOneReqOffRide() {
@@ -47,15 +52,17 @@ public class W_FragmentOneReqOffRide extends Fragment {
 
         // Reference of RecyclerView ....
         wRequestRideRecyclerView = view.findViewById(R.id.wRequestRideRecyclerView);
+        wRequestRideBtn = view.findViewById(R.id.wRequestRideBtn);
+        wOfferRideBtn = view.findViewById(R.id.wOfferRideBtn);
 
         ArrayList<W_FragmentOneModelClass> wFragmentOneModelClassArrayList = new ArrayList<>();
         // Add list item here...
 
         wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,2,13));
-        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,3,12));
-        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,2,13));
-        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,3,12));
-        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,2,13));
+        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_BIKE_,R.drawable.icgo_motorcycle_24dp,3,12));
+        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_MINI_TRUCK_,R.drawable.icgo_directions_bus_24dp,2,13));
+        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_MINI_TRUCK_,R.drawable.icgo_mini_truck_24dp,3,12));
+        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_BIKE_,R.drawable.icgo_motorcycle_24dp,2,13));
         wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,3,12));
 
         // adaptor class...
@@ -69,9 +76,37 @@ public class W_FragmentOneReqOffRide extends Fragment {
 
         w_fragmentOneAdaptor.notifyDataSetChanged();
 
-    // Request Ride items in horizontally....--------------------------------
+    // Request Ride items in horizontally....-------------------------------
+
+    // On Button Click ...
+        wRequestRideBtn.setOnClickListener(this);
+        wOfferRideBtn.setOnClickListener(this);
+
+    // On Button Click ...
+
         return view;
     }
+
+    // OnClick -----------------------
+    @Override
+    public void onClick(View v) {
+        if (v == wRequestRideBtn){
+            Drawable tempColor = wRequestRideBtn.getBackground();
+
+            wRequestRideBtn.setBackground(wOfferRideBtn.getBackground());
+            wOfferRideBtn.setBackground(tempColor);
+        }
+        if (v == wOfferRideBtn){
+            Drawable tempColor = wOfferRideBtn.getBackground();
+
+            wOfferRideBtn.setBackground(wRequestRideBtn.getBackground());
+            wRequestRideBtn.setBackground(tempColor);
+
+        }
+    }
+
+    // OnClick -----------------------
+
 
 
 }

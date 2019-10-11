@@ -17,6 +17,7 @@
         android:layout_height="93dp"
         android:layout_margin="2dp"
         android:background="@drawable/back_border_05dp_10dp"
+        android:backgroundTint="@color/wColorB_LightWhite"
         android:padding="3dp">
 
         <TextView

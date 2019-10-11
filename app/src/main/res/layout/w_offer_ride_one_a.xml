@@ -18,6 +18,7 @@
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/wColorB_LightWhite"
             android:background="@drawable/back_border_1dp_10dp">
 
             <ImageView
@@ -29,7 +30,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/text2"
-                app:srcCompat="@android:drawable/btn_star_big_on" />
+                android:src="@drawable/icgo_motorcycle_24dp"/>
 
             <TextView
                 android:id="@+id/text2"
@@ -37,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Bike"
-                android:textColor="#fff00090"
+                android:textColor="@color/wColorDark_2"
                 android:textSize="20dp" />
 
 
@@ -48,6 +49,7 @@
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/wColorB_LightWhite"
             android:background="@drawable/back_border_1dp_10dp">
 
             <ImageView
@@ -59,7 +61,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/text3"
-                app:srcCompat="@android:drawable/btn_star_big_on" />
+                android:src="@drawable/icgo_car_24dp"/>
 
             <TextView
                 android:id="@+id/text3"
@@ -67,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Car"
-                android:textColor="#fff00090"
+                android:textColor="@color/wColorDark_2"
                 android:textSize="20dp" />
 
 
@@ -78,6 +80,7 @@
             android:layout_width="200dp"
             android:layout_height="93dp"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/wColorB_LightWhite"
             android:background="@drawable/back_border_1dp_10dp">
 
             <LinearLayout
@@ -91,6 +94,7 @@
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_margin="2dp"
+                    android:backgroundTint="@color/wColorDark_2"
                     android:padding="2dp" />
 
                 <EditText
@@ -98,6 +102,11 @@
                     android:layout_height="45dp"
                     android:layout_margin="2dp"
                     android:hint="01"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:textColor="@color/wColorDark_2"
+                    android:backgroundTint="@color/wColorDark_2"
                     android:padding="2dp"
                     android:textAlignment="center" />
 
@@ -106,6 +115,12 @@
                     android:layout_height="45dp"
                     android:layout_margin="2dp"
                     android:hint="DT"
+                    android:textAllCaps="true"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:maxLength="3"
+                    android:textColor="@color/wColorDark_2"
+                    android:backgroundTint="@color/wColorDark_2"
                     android:padding="2dp"
                     android:textAlignment="center" />
 
@@ -115,6 +130,11 @@
                     android:layout_margin="2dp"
                     android:hint="0110"
                     android:padding="2dp"
+                    android:maxLines="1"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:textColor="@color/wColorDark_2"
+                    android:backgroundTint="@color/wColorDark_2"
                     android:textAlignment="center" />
 
             </LinearLayout>
@@ -125,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Enter Vehicle No."
-                android:textColor="#fff00090"
+                android:textColor="@color/wColorDark_2"
                 android:textSize="20dp" />
 
 
@@ -136,6 +156,7 @@
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/wColorB_LightWhite"
             android:background="@drawable/back_border_1dp_10dp">
 
             <ImageView
@@ -147,7 +168,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/text4"
-                app:srcCompat="@android:drawable/btn_star_big_on" />
+                android:backgroundTint="@color/wColorC_LightOrange"
+                android:src="@drawable/icgo_mini_truck_24dp"/>
 
             <TextView
                 android:id="@+id/text4"
@@ -155,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Mini Truck"
-                android:textColor="#fff00090"
+                android:textColor="@color/wColorDark_2"
                 android:textSize="20dp" />
 
 

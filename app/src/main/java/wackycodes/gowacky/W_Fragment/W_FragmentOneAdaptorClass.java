@@ -18,6 +18,10 @@ import wackycodes.gowacky.W_Fragment.W_FragmentOneReqOffRide;
 
 public class W_FragmentOneAdaptorClass extends RecyclerView.Adapter<W_FragmentOneAdaptorClass.RequestRideViewHolder> {
 
+
+    // Final Static...
+    private static final int _CAR_ = 1901, _BIKE_ = 1902, _MINI_TRUCK_ = 1903;
+
     private ArrayList<W_FragmentOneModelClass> wFragmentOneModelClassArrayList;
 
     public static class RequestRideViewHolder extends RecyclerView.ViewHolder{
@@ -56,7 +60,7 @@ public class W_FragmentOneAdaptorClass extends RecyclerView.Adapter<W_FragmentOn
     @Override
     public void onBindViewHolder(@NonNull RequestRideViewHolder holder, int position) {
         W_FragmentOneModelClass w_fragmentOneModelClass = wFragmentOneModelClassArrayList.get(position);
-        holder.wVehicleType.setText(Integer.toString(w_fragmentOneModelClass.getwVehicleType()));
+        holder.wVehicleType.setText(setVehicleType(w_fragmentOneModelClass.getwVehicleType()));
         holder.wAvailableSeats.setText(Integer.toString(w_fragmentOneModelClass.getwAvailableSeats()));
         holder.wVehicleReachTime.setText(Integer.toString(w_fragmentOneModelClass.getwVehicleReachTime()));
         holder.wVehicleImage.setImageResource(w_fragmentOneModelClass.getwVehicleImage());
@@ -65,6 +69,24 @@ public class W_FragmentOneAdaptorClass extends RecyclerView.Adapter<W_FragmentOn
     @Override
     public int getItemCount() {
         return wFragmentOneModelClassArrayList.size();
+    }
+
+    public String setVehicleType(int vehicleID){
+        String vehicleName;
+        switch (vehicleID){
+            case _CAR_:
+                vehicleName = "Car";
+                break;
+            case _BIKE_:
+                vehicleName = "Bike";
+                break;
+            case _MINI_TRUCK_:
+                vehicleName = "Mini Truck";
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + vehicleID);
+        }
+        return vehicleName;
     }
 
 

@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -18,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/F:/WackyAndroid/installation/Android/plugins/android/lib/android.jar!/images/material_design_icons/av/ic_call_to_action_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/F:/WackyAndroid/installation/Android/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_shipping_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +33,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="icgo_vehicle_nu_24dp" />
+                            <entry key="outputName" value="icgo_mini_truck_24dp" />
                             <entry key="sourceFile" value="C:\Users\shoppe" />
                           </map>
                         </option>

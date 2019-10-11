@@ -8,15 +8,14 @@
 <!--  For Offer Ride   -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="1dp">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="125dp"
             android:layout_marginTop="15dp"
             android:gravity="center"
-            android:background="@drawable/back_border_1dp_0dp"
+            android:background="@drawable/back_border_1dp_20dp_btn_color_1"
             android:elevation="4dp"
             android:translationZ="4dp">
 
@@ -26,7 +25,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="18dp"
-                android:visibility="visible">
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:visibility="gone">
 
                 <include layout="@layout/w_offer_ride_one_a"/>
 
@@ -36,7 +37,9 @@
                 android:id="@+id/wFrameForRequestRide"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="gone">
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:visibility="visible">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_marginTop="18dp"
@@ -52,8 +55,6 @@
         <LinearLayout
             android:layout_width="330dp"
             android:layout_height="30dp"
-            android:background="@drawable/back_border_1dp_30dp"
-            android:backgroundTint="#00EBB4"
             android:layout_centerHorizontal="true"
             android:translationZ="5dp"
             android:elevation="4dp"
@@ -62,15 +63,18 @@
             <Button
                 android:id="@+id/wRequestRideBtn"
                 android:layout_width="160dp"
-                android:background="@drawable/back_border_1dp_30dp"
+                android:background="@drawable/back_border_1dp_30dp_btn_color_1"
                 android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
                 android:text="Requst Ride"/>
 
             <Button
                 android:layout_marginLeft="10dp"
                 android:id="@+id/wOfferRideBtn"
                 android:layout_width="160dp"
-                android:background="@drawable/back_border_1dp_30dp"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/back_border_1dp_30dp_btn_color_1"
                 android:layout_height="match_parent"
                 android:text="Offer Ride" />
 
