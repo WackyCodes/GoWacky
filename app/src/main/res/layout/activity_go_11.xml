@@ -25,7 +25,7 @@
             android:layout_marginTop="8dp"
             android:elevation="4dp"
             android:background="@drawable/icgo_toggle_24dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/wColorC_LightOrange"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +33,7 @@
             android:id="@+id/mapView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,59 +47,104 @@
 
         </com.google.android.gms.maps.MapView>
 
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-        </FrameLayout>
 
         <FrameLayout
             android:id="@+id/fragment2"
             android:layout_width="300dp"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:backgroundTint="#fff"
-            android:background="@drawable/back_border_0dp_10dp"
             app:layout_constraintStart_toEndOf="@+id/toggleButton"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp">
 
-
-                <EditText
-                    android:id="@+id/editText"
+                <LinearLayout
+                    android:id="@+id/starpointlayout2"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
                     android:paddingLeft="6dp"
+                    android:paddingBottom="4dp"
                     android:background="@drawable/back_border_1dp_10dp"
-                    android:hint="Enter Your Starting point"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <EditText
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"
+                        android:textColor="@color/color_icgo"
+                        android:paddingLeft="20dp"
+                        android:text="Pick Up From"/>
+                    <EditText
+                        android:id="@+id/editpickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:paddingLeft="4dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:background="@color/colorTransparent"
+                        android:hint="Enter Your pickup location"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/icgo_pin_drop_24dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/starpointlayout1"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="4dp"
                     android:paddingLeft="6dp"
+                    android:paddingBottom="4dp"
                     android:background="@drawable/back_border_1dp_10dp"
-                    android:hint="Enter Your Last point"
-                    app:layout_constraintEnd_toEndOf="@+id/editText"
-                    app:layout_constraintStart_toStartOf="@+id/editText"
-                    app:layout_constraintTop_toBottomOf="@+id/editText" />
+                    app:layout_constraintEnd_toEndOf="@+id/starpointlayout2"
+                    app:layout_constraintStart_toStartOf="@+id/starpointlayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/starpointlayout2" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"
+                        android:textColor="@color/color_icgo"
+                        android:paddingLeft="20dp"
+                        android:text="Drop at"/>
+                    <EditText
+                        android:id="@+id/editTextdroppingpoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:paddingLeft="4dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:background="@color/colorTransparent"
+                        android:hint="Enter Your Last point"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/icgo_pin_drop_24dp"
+                        />
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/icgo_swap_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -110,7 +155,7 @@
             android:id="@+id/frameLayout2"
             android:layout_width="0dp"
             android:layout_height="200dp"
-            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent">
@@ -125,9 +170,9 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="1dp"
+                    app:layout_constraintBottom_toTopOf="@+id/wMainMiddleStatusFrame"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintStart_toStartOf="parent">
 
                     <TextView
                         android:id="@+id/textView2"
@@ -136,7 +181,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
                         android:text="16/9 SUN"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/wColorC_LightOrange"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -147,7 +192,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
                         android:text="18:20"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/wColorC_LightOrange"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView2"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -158,7 +203,7 @@
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
                         android:text="Seats : "
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/wColorC_LightOrange"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/textView"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -171,7 +216,7 @@
                         android:layout_marginRight="8dp"
                         android:gravity="right"
                         android:text="03"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/wColorC_LightOrange"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -184,30 +229,35 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="2dp"
-                    android:text="Sample Button"
-                    android:textColor="@color/colorWhite"
-                    android:elevation="5dp"
-                    android:translationZ="5dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/back_border_1dp_10dp"
                     android:backgroundTint="@color/colorGreen"
+                    android:elevation="5dp"
+                    android:text="Sample Button"
+                    android:textColor="@color/colorWhite"
+                    android:translationZ="5dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
+                <!--
+                    android:layout_height="90dp" + 15dp
+                         -->
+
                 <FrameLayout
                     android:id="@+id/wMainMiddleStatusFrame"
                     android:layout_width="0dp"
-                    android:layout_height="140dp"
+                    android:layout_height="105dp"
+                    android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/wRequestRideBtn"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
 
-                <!--    For Different Layout and different task -->
+                    <!--    For Different Layout and different task -->
 
 
-                <!--    For Different Layout and different task -->
+                    <!--    For Different Layout and different task -->
 
                 </FrameLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>

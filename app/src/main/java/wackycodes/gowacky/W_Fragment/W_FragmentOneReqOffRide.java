@@ -20,7 +20,7 @@ import wackycodes.gowacky.R;
 public class W_FragmentOneReqOffRide extends Fragment implements View.OnClickListener {
 
     // Final Static...
-    private static final int _CAR_ = 1901, _BIKE_ = 1902, _MINI_TRUCK_ = 1903;
+    private static final int _CAR_ = 1901, _BIKE_ = 1902, _MINI_TRUCK_ = 1903, _BUS_ = 1904;
     // Variable declaration ...
     private RecyclerView wRequestRideRecyclerView;
 
@@ -60,7 +60,7 @@ public class W_FragmentOneReqOffRide extends Fragment implements View.OnClickLis
 
         wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,2,13));
         wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_BIKE_,R.drawable.icgo_motorcycle_24dp,3,12));
-        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_MINI_TRUCK_,R.drawable.icgo_directions_bus_24dp,2,13));
+        wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_BUS_,R.drawable.icgo_directions_bus_24dp,2,13));
         wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_MINI_TRUCK_,R.drawable.icgo_mini_truck_24dp,3,12));
         wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_BIKE_,R.drawable.icgo_motorcycle_24dp,2,13));
         wFragmentOneModelClassArrayList.add(new W_FragmentOneModelClass(_CAR_,R.drawable.icgo_car_24dp,3,12));

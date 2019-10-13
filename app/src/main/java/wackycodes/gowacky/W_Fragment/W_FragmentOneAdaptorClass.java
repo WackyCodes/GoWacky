@@ -20,7 +20,7 @@ public class W_FragmentOneAdaptorClass extends RecyclerView.Adapter<W_FragmentOn
 
 
     // Final Static...
-    private static final int _CAR_ = 1901, _BIKE_ = 1902, _MINI_TRUCK_ = 1903;
+    private static final int _CAR_ = 1901, _BIKE_ = 1902, _MINI_TRUCK_ = 1903, _BUS_ = 1904;
 
     private ArrayList<W_FragmentOneModelClass> wFragmentOneModelClassArrayList;
 
@@ -81,7 +81,10 @@ public class W_FragmentOneAdaptorClass extends RecyclerView.Adapter<W_FragmentOn
                 vehicleName = "Bike";
                 break;
             case _MINI_TRUCK_:
-                vehicleName = "Mini Truck";
+                vehicleName = "Truck";
+                break;
+            case _BUS_:
+                vehicleName = "Bus";
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + vehicleID);
