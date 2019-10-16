@@ -1,6 +1,5 @@
 package wackycodes.gowacky.W_Fragment;
 
-import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -45,15 +44,15 @@ public class W_FragmentOneReqOffRide extends Fragment implements View.OnClickLis
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-       View view =  inflater.inflate(R.layout.w__fragment__one_request_ride, container, false);
+       View view =  inflater.inflate(R.layout.w__fragment__one_req_offer_ride_options, container, false);
 
 
    // Request Ride items in horizontally....--------------------------------
 
         // Reference of RecyclerView ....
         wRequestRideRecyclerView = view.findViewById(R.id.wRequestRideRecyclerView);
-        wRequestRideBtn = view.findViewById(R.id.wRequestRideBtn);
-        wOfferRideBtn = view.findViewById(R.id.wOfferRideBtn);
+        wRequestRideBtn = view.findViewById(R.id.wOfferRideOptionBtn);
+        wOfferRideBtn = view.findViewById(R.id.wOfferRideOptionBtn);
 
         ArrayList<W_FragmentOneModelClass> wFragmentOneModelClassArrayList = new ArrayList<>();
         // Add list item here...

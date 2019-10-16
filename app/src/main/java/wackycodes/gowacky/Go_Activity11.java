@@ -43,10 +43,10 @@ public class Go_Activity11 extends AppCompatActivity implements OnMapReadyCallba
 //        ---------------------------------------------------------
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.wackyMap);
+                .findFragmentById(R.id.wMapViewFragment);
         mapFragment.getMapAsync(this);
 
-        findViewById(R.id.wRequestRideBtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.wOfferRideOptionBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Go_Activity11.this,"Method doesn't create for this button...", Toast.LENGTH_LONG).show();

@@ -90,48 +90,51 @@
                 android:gravity="center_vertical">
 
                 <Spinner
-                    android:id="@+id/spacer1"
+                    android:id="@+id/wVehicleNoOptionForState"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
                     android:textAlignment="center"
                     android:backgroundTint="@color/wColorDark_2" />
 
                 <EditText
+                    android:id="@+id/wVehicleNoDisttNoET"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
+                    android:backgroundTint="@color/wColorDark_2"
                     android:hint="01"
+                    android:inputType="number"
+                    android:maxLength="2"
                     android:maxLines="1"
                     android:singleLine="true"
-                    android:maxLength="2"
-                    android:inputType="number"
-                    android:textColor="@color/wColorDark_2"
-                    android:backgroundTint="@color/wColorDark_2"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:textColor="@color/wColorDark_2" />
 
                 <EditText
+                    android:id="@+id/wVehicleNoMiddleIdET"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
+                    android:backgroundTint="@color/wColorDark_2"
                     android:hint="DT"
-                    android:textAllCaps="true"
                     android:inputType="textCapCharacters"
+                    android:maxLength="3"
                     android:maxLines="1"
                     android:singleLine="true"
-                    android:maxLength="3"
-                    android:textColor="@color/wColorDark_2"
-                    android:backgroundTint="@color/wColorDark_2"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/wColorDark_2" />
 
                 <EditText
+                    android:id="@+id/wVehicleNoLastIdET"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
+                    android:backgroundTint="@color/wColorDark_2"
                     android:hint="0110"
+                    android:inputType="number"
+                    android:maxLength="4"
                     android:maxLines="1"
                     android:singleLine="true"
-                    android:maxLength="4"
-                    android:inputType="number"
-                    android:textColor="@color/wColorDark_2"
-                    android:backgroundTint="@color/wColorDark_2"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:textColor="@color/wColorDark_2" />
 
             </LinearLayout>
 
