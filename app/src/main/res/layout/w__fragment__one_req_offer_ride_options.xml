@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".W_Fragment.W_FragmentOneReqOffRide">
+    tools:context=".adaptor_model_fragment.W_FragmentOneReqOffRide">
 
 <!--  For Offer Ride   -->
     <RelativeLayout

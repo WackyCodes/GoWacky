@@ -1,19 +1,16 @@
-package wackycodes.gowacky.W_Fragment;
+package wackycodes.gowacky.adaptor_model_fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.ListAdapter;
+
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import wackycodes.gowacky.R;
-import wackycodes.gowacky.Go_Activity11;
-import wackycodes.gowacky.W_Fragment.W_FragmentOneModelClass;
-import wackycodes.gowacky.W_Fragment.W_FragmentOneReqOffRide;
 
 
 public class W_FragmentOneAdaptorClass extends RecyclerView.Adapter<W_FragmentOneAdaptorClass.RequestRideViewHolder> {

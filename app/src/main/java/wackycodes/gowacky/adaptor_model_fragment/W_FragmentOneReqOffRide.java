@@ -1,4 +1,4 @@
-package wackycodes.gowacky.W_Fragment;
+package wackycodes.gowacky.adaptor_model_fragment;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;

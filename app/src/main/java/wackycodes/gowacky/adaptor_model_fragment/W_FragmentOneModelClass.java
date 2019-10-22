@@ -1,4 +1,4 @@
-package wackycodes.gowacky.W_Fragment;
+package wackycodes.gowacky.adaptor_model_fragment;
 
 public class W_FragmentOneModelClass {
 
