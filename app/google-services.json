@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "657936402805",
+    "firebase_url": "https://gowacky.firebaseio.com",
+    "project_id": "gowacky",
+    "storage_bucket": "gowacky.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657936402805:android:a969a8284e04b80edfeb3c",
+        "android_client_info": {
+          "package_name": "wackycodes.gowacky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657936402805-3vm79eaulin2iqjeiaqjcf3rsbepilvq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wackycodes.gowacky",
+            "certificate_hash": "72f34f94f0d9321de50648a359583841db4fad9b"
+          }
+        },
+        {
+          "client_id": "657936402805-lm2e3vrqsqcimf2dru6lqbqinj2bd48h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7BJQihDF7gkUZnU1WWyl3gBumILqHMVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657936402805-lm2e3vrqsqcimf2dru6lqbqinj2bd48h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
